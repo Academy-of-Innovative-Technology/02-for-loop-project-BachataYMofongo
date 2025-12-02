@@ -31,3 +31,165 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+h1 {
+    font-size: 2.5em;
+    color: #8B4513;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba (0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #CD853F;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+}
+
+.btn {
+padding: 15px 30px;
+font-size: 1.1em;
+font-weight: 600;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+transition: transform 0.2s, box-shadown 0.2s;
+color: #fff;
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-start {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.btn-stop {
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+}
+
+.btn-reset {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.lyrics-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.instruction {
+    text-align: center;
+    font-size: 1.3em;
+    color: #8B4513;
+    padding: 20px;
+}
+.verse {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    transition: opacity 0.3s, transform 0.3s;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.verse-green {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border-left: 5px solid #28a745;
+    color: #155724;
+}
+
+.verse-yellow {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+    border-left: 5px solid #ffc107;
+    color: #856404;
+}
+
+.verse-red {
+    background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+    border-left: 5px solid #dc3545;
+    color: #721c24;
+    animation: fadeIn 0.5s ease, pulse 1s infinite;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.01);
+    }
+}
+
+.verse-final {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-left: 5px solid #4a00e0;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    padding: 25px;
+}
+
+.count-line {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.action-line {
+    font-style: italic;
+    margin: 8px 0;
+}
+
+.next-line {
+    font-weight: 600;
+}
+
+.cookie-emoji {
+    font-size: 1.3em;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+    
+    .verse {
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+}
+
