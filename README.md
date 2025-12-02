@@ -3,7 +3,7 @@
 
 ## 99 ___ of ___ on/in the ___
 
-
+s
 ## 🎯 Project Objective
 
 Using **JavaScript for loops** to dynamically generate repeated content on a webpage. Should be able to:
